@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: italic;
+	
+}
+
+.aku {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 25px;
+    width: 300px;
+    background-color: rgb(248, 244, 244);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .3);
+    font-family:sans-serif;
+}
+h1{
+    text-align: center;
+    color: #fafafa;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #2979ff;
+}
+
+.aku h1 {
+    text-align: center;
+    color: #755123;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #e956d5;
+    font-family: fantasy;
+}
+.aku h2 {
+    text-align: center;
+    font-family: monospace;
+}
+.aku label {
+    text-align: left;
+    color: red ;
+}
+
+.aku form input {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #151618;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+body {
+    height: 100vh;
+    background-image: url('coffee-and-wreath-of-yellow-flowers-wallpaper-original.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    padding: 20px 25px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .3);
+    font-family: monospace;
+}
+
+.container h1 {
+    text-align: left;
+    color: #fafafa;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #9c471f;
+}
+
+.container label {
+    text-align: left;
+    color:rgb(231, 99, 121);
+}
+
+.container form input {
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #5c301c;
+    color:black;
+    font-size: 15px;
+}
+
+.input {
+    border:solid 1.px #ccc;
+    border-radius: 1rem;
+    background: none;
+    padding:1rem;
+    font-size: 1rem;
+    color: bisque;
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.tabel th{
+    background-color: rgb(125, 125, 247);
+    color: white;
+}
+
+.button{
+    position: relative;
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+    background-color:#202231;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width .5s,
+    border-radius .5s;
+}
+.button *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .25s;
+}
+.icon{
+    opacity: 0;
+}
+.button:focus{
+    width: 30px;;
+    background-color: pink;
+    border-radius: 50%;
+}
+.button:focus .text {
+    opacity: 0;
+}
+
+.button:focus .icon {
+    opacity: 1;
+    transition-delay: .5s;
+}

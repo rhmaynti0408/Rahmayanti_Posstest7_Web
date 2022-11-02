@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding:10px;
+    background-color: rgb(253, 213, 241);
+    color:blueviolet;
+    display: flex;
+    position:relative; 
+    right: 0;
+    left: 0;
+}
+
+nav a{
+    color:rgb(5, 31, 53);
+    text-decoration:none;
+}
+
+.Nav-link{
+    list-style-type: none;
+    /* display: flex;
+    justify-content:space-between;
+    width: 200px; */
+    /* position: fixed;  */
+
+}
+
+.Nav-link li{
+    float:left;
+    padding: 0;
+
+}
+.nav-item{
+    justify-content: center;
+    display: flex;
+    align-items: center; 
+    padding-left: 2000px;
+}
+.center{
+    display: flex;
+}
+
+.header{
+    color:darksalmon;
+    font-weight: bold;
+    font-size: 40px;
+    padding:10px 10px;
+    float:left;
+}
+
+.nav-item a:hover{
+    color: rgb(231, 238, 235);
+    transform: scale(2);
+    transition: all 3s ease-in;
+}
+
+.contents-items{
+    margin: 5px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    float: left;
+    width: 10px;
+}
+
+.contents-gambar{
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: center; */
+    /* padding: 40px; */
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.contents-gambar p{
+    font-size: 20px;
+}
+
+.footer-logo {
+    font-size: 40px;
+    background-color: rgb(103, 14, 14);
+    color :wheat;
+    float:bottom;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    /* padding-left:100px; */
+}
+
+.about-me-text{
+    padding-left: 600px;
+}
+
+/* .about-me h3 p{
+    color: black;
+    padding-right: 200px;
+} */
+
+.footer{ 
+    color: black;
+    height:120px;
+
+    padding-top: 200px; 
+}
+
+.foto-aku{
+    padding-top: 20px;
+    float: left;
+    padding-left:100px;
+    padding-bottom: 40px;
+}
+
+
+footer h2{
+    padding-left: 140px;
+    padding-top: 600px;
+}
+
+.tombol-button{
+    padding :10px;
+    cursor:pointer;
+    font-size: 30 px;
+    border: none;
+    border-radius: 20px;
+    float: right;
+}
+
+.tombol-button.tombol-terang{
+    display: none;
+    background-color: #000000;
+}
+
+.tombol-button.tombol-gelap{
+    color: aliceblue;
+    background-color: #000000;
+}
+
+body.gelap{
+    background-color: #000000;
+}
+
+.gelap.tombol{
+    background-color: #000000;
+    color:aliceblue 
+}

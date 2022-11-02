@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('123.webp');
+}
+
+.container {
+    width: 50%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 25px;
+    background-color: palevioletred;
+    font-size: medium;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.form {
+    padding-top: 30px;
+    background-color: rgb(240, 201, 214);
+    position: relative;
+}
+
+.input {
+    border:solid 1.px #ccc;
+    border-radius: 1rem;
+    background: none;
+    padding:1rem;
+    font-size: 1rem;
+    color: bisque;
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+
+}
+
+.label{
+    position: relative;
+    left: 16px;
+    color: antiquewhite;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.input:focus{
+    outline:none;
+    border :1.5 px solid #ccc;
+}
+
+.input:focus ~ label{
+    transform: translateY(30%) scale(0.8);
+    background-color: blueviolet;
+    padding: 0 0.2em;
+    color: aqua;
+}
+
+.login  {
+    text-decoration: none;
+    color: blue;
+}
+
+.login .input {
+    border: 1px solid white;
+    border-radius: 50px;
+    padding-left: 10px;
+    background-color: rgb(198, 198, 198);
+    color: rgb(59, 59, 59);
+}
+
+.judul {
+    background-color: palevioletred;
+}
+
+
+.button{
+    position: relative;
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+    background-color:#202231;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width .5s,
+    border-radius .5s;
+}
+.button *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .25s;
+}
+.icon{
+    opacity: 0;
+}
+.button:focus{
+    width: 30px;;
+    background-color: rgb(236, 89, 114);
+    border-radius: 50%;
+}
+.button:focus .text {
+    opacity: 0;
+}
+
+.button:focus .icon {
+    opacity: 1;
+    transition-delay: .5s;
+}
